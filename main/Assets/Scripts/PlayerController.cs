@@ -59,15 +59,18 @@ public class PlayerController : MonoBehaviour
 			extraJumps = extraJumpsValue;
 		}
 
-		if (extraJumps > 0 && Input.GetKeyDown(KeyCode.Space)) {
-				rb.velocity = Vector2.up * jumpForce;
-				extraJumps--;
-				anim.SetTrigger("takeOff");
-			} else {if(isGrounded == true && extraJumps == 0 && Input.GetKeyDown(KeyCode.Space))
+		if(isGrounded == true && extraJumps == 0 && Input.GetKeyDown(KeyCode.Space))
 		{
 			rb.velocity = Vector2.up * jumpForce;
 			anim.SetTrigger("takeOff");
-		}}
+		} else {
+			if (extraJumps > 0 && Input.GetKeyDown(KeyCode.Space)) {
+				rb.velocity = Vector2.up * jumpForce;
+				extraJumps--;
+				anim.SetTrigger("takeOff");
+			}
+		}
+
 		if (isGrounded == true) {
 			anim.SetBool("isJumping", false);
 		} else {

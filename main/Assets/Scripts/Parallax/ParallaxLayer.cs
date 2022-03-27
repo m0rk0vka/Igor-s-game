@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
- public class ParallaxLayer : MonoBehaviour
+public class ParallaxLayer : MonoBehaviour
  {
        public float parallaxFactor;
        public void Move(float delta)
@@ -11,5 +11,4 @@ using UnityEngine;
            newPos.x -= delta * parallaxFactor;
            transform.localPosition = newPos;
        }
-
-}
+ }

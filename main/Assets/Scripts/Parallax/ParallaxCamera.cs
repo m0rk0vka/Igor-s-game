@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
- public class ParallaxCamera : MonoBehaviour 
+public class ParallaxCamera : MonoBehaviour 
  {
      public delegate void ParallaxCameraDelegate(float deltaMovement);
      public ParallaxCameraDelegate onCameraTranslate;

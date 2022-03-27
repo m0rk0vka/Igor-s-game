@@ -42,11 +42,11 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: BG
-    uniqueID: 2720323991
-    locked: 0
-  - name: FG
-    uniqueID: 996031661
+    uniqueID: 436876045
     locked: 0
   - name: Player
-    uniqueID: 1052271911
+    uniqueID: 3544716855
+    locked: 0
+  - name: FG
+    uniqueID: 777498733
     locked: 0
